@@ -34,3 +34,4 @@ EncryptedFile_*
 !/upload/empty_file.txt
 /~/*
 gitdo.sh
+teampass-db

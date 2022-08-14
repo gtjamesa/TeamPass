@@ -1,4 +1,4 @@
-FROM richarvey/nginx-php-fpm:1.10.3
+FROM php:8.0-fpm-alpine
 
 # The location of the web files
 ARG VOL=/var/www/html
@@ -24,10 +24,10 @@ echo
 
 # Fix API URL, BUG: API not working in container. #2100
 # Search last } and insert configuration rows before
-RUN sed -i "/^}/i \
-  location /api/ {\
-          try_files $uri $uri/ /api/index.php?$args;\
-  }" /etc/nginx/sites-enabled/default.conf
+# RUN sed -i "/^}/i \
+#   location /api/ {\
+#           try_files $uri $uri/ /api/index.php?$args;\
+#   }" /etc/nginx/sites-enabled/default.conf
 
 COPY teampass-docker-start.sh /teampass-docker-start.sh
 
@@ -35,5 +35,5 @@ COPY teampass-docker-start.sh /teampass-docker-start.sh
 ENV REPO_URL https://github.com/nilsteampassnet/TeamPass.git
 #ENV GIT_TAG 3.0.0.14
 
-ENTRYPOINT ["/bin/sh"]
-CMD ["/teampass-docker-start.sh"]
+# ENTRYPOINT ["/bin/sh"]
+# CMD ["/teampass-docker-start.sh"]
