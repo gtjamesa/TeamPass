@@ -35,3 +35,6 @@ EncryptedFile_*
 /~/*
 gitdo.sh
 teampass-db
+install-old
+sk/teampass-seckey.txt
+!sk/.gitkeep
