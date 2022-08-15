@@ -63,7 +63,7 @@ if (checkUser($_SESSION['user_id'], $_SESSION['key'], 'items', $SETTINGS) === fa
 set_time_limit(0);
 
 require_once $SETTINGS['cpassman_dir'] . '/includes/config/settings.php';
-header('Content-type: text/html; charset=utf-8');
+// header('Content-type: text/html; charset=utf-8');
 error_reporting(E_ERROR);
 require_once $SETTINGS['cpassman_dir'] . '/sources/main.functions.php';
 require_once $SETTINGS['cpassman_dir'] . '/sources/SplClassLoader.php';

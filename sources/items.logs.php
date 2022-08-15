@@ -57,8 +57,8 @@ require_once $SETTINGS['cpassman_dir'].'/includes/language/'.$_SESSION['user_lan
 require_once $SETTINGS['cpassman_dir'].'/includes/config/settings.php';
 require_once $SETTINGS['cpassman_dir'].'/includes/config/tp.config.php';
 
-header('Content-type: text/html; charset=utf-8');
-header('Cache-Control: no-cache, no-store, must-revalidate');
+// header('Content-type: text/html; charset=utf-8');
+// header('Cache-Control: no-cache, no-store, must-revalidate');
 
 require_once $SETTINGS['cpassman_dir'].'/sources/SplClassLoader.php';
 

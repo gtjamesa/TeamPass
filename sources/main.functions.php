@@ -37,8 +37,8 @@ if (isset($SETTINGS['cpassman_dir']) === false || empty($SETTINGS['cpassman_dir'
     include_once __DIR__ . '/../includes/config/tp.config.php';
 }
 
-header('Content-type: text/html; charset=utf-8');
-header('Cache-Control: no-cache, must-revalidate');
+// header('Content-type: text/html; charset=utf-8');
+// header('Cache-Control: no-cache, must-revalidate');
 /**
  * Convert language code to string.
  *

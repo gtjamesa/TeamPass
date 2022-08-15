@@ -53,8 +53,8 @@ if (checkUser($_SESSION['user_id'], $_SESSION['key'], 'folders', $SETTINGS) === 
 
 require_once $SETTINGS['cpassman_dir'].'/includes/language/'.$_SESSION['user_language'].'.php';
 require_once $SETTINGS['cpassman_dir'].'/includes/config/settings.php';
-header('Content-type: text/html; charset=utf-8');
-header('Cache-Control: no-cache, must-revalidate');
+// header('Content-type: text/html; charset=utf-8');
+// header('Cache-Control: no-cache, must-revalidate');
 require_once 'main.functions.php';
 // Connect to mysql server
 require_once $SETTINGS['cpassman_dir'].'/includes/libraries/Database/Meekrodb/db.class.php';

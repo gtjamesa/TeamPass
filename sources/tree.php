@@ -42,8 +42,8 @@ require_once $SETTINGS['cpassman_dir'] . '/includes/language/' . $_SESSION['user
 require_once $SETTINGS['cpassman_dir'] . '/includes/config/settings.php';
 
 // header
-header('Content-type: text/html; charset=utf-8');
-header('Cache-Control: no-cache, must-revalidate');
+// header('Content-type: text/html; charset=utf-8');
+// header('Cache-Control: no-cache, must-revalidate');
 
 // Define Timezone
 if (isset($SETTINGS['timezone'])) {

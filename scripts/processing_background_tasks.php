@@ -35,8 +35,8 @@ set_time_limit($SETTINGS['task_maximum_run_time']);
 // Do checks
 require_once $SETTINGS['cpassman_dir'].'/includes/config/include.php';
 require_once $SETTINGS['cpassman_dir'].'/includes/config/settings.php';
-header('Content-type: text/html; charset=utf-8');
-header('Cache-Control: no-cache, must-revalidate');
+// header('Content-type: text/html; charset=utf-8');
+// header('Cache-Control: no-cache, must-revalidate');
 require_once $SETTINGS['cpassman_dir'].'/sources/main.functions.php';
 // Connect to mysql server
 require_once $SETTINGS['cpassman_dir'].'/includes/libraries/Database/Meekrodb/db.class.php';

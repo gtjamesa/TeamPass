@@ -251,7 +251,7 @@ function identifyUser(string $sentData, array $SETTINGS): bool
     include_once $SETTINGS['cpassman_dir'] . '/sources/main.functions.php';
     include_once $SETTINGS['cpassman_dir'] . '/sources/SplClassLoader.php';
     
-    header('Content-type: text/html; charset=utf-8');
+    // header('Content-type: text/html; charset=utf-8');
     error_reporting(E_ERROR);
 
     // Load AntiXSS
